@@ -2,10 +2,7 @@ const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
 const compiledFactory = require('./build/CampaignFactory.json');
 
-const provider = new HDWalletProvider(
-'meadow census undo vault item waste pyramid best parent dad ignore moral',
-'https://rinkeby.infura.io/v3/69bddf21f78343cf838b7fa14259d12c'
-);
+const provider = new HDWalletProvider();
 
 const web3 = new Web3(provider);
 
